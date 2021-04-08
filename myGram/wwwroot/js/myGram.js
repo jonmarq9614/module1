@@ -1,29 +1,104 @@
-﻿var mySpan = document.getElementById("myGram");
-var newSpan = document.createElement("span");
-newSpan.innerHTML = "My Gram";
-mySpan.appendChild(newSpan);
+﻿var span = document.createElement("span");
+span.innerHTML = "My Gram ";
 
-var myFirstButton = document.getElementsByClassName("firstButton");
-var newButton = document.createElement("button");
-newButton.innerHTML = "Log In";
-myFirstButton[0].appendChild(newButton);
+var div = document.getElementById("myDiv");
 
-var mySecondButton = document.getElementsByClassName("secondButton");
-var newButton2 = document.createElement("button");
-newButton2.innerHTML = "Sign Up";
-mySecondButton[0].appendChild(newButton2);
+div.appendChild(span);
 
-var imageDiv = document.getElementsByClassName("image");
-var imageDiv2 = document.createElement("div");
-imageDiv2.innerHTML = "Image 1 Image 2 Image 3 Image 4 Image 5";
-imageDiv[0].appendChild(imageDiv2);
+var loginButton = document.createElement("button");
+loginButton.innerHTML = "Log In";
 
-var about = document.getElementsByClassName("myDiv");
-var about2 = document.createElement("div");
-about2.innerHTML = "About Blog Jobs Help";
-about[0].appendChild(about2);
+div.appendChild(loginButton);
 
-var english = document.getElementsByClassName("myDiv2");
-var english2 = document.createElement("div");
-english2.innerHTML = "English 2021 MyGram";
-english[0].appendChild(english2);
+var signupButton = document.createElement("button");
+signupButton.innerHTML = "Sign Up";
+
+div.appendChild(signupButton)
+
+var lineBreak = document.createElement("br");
+
+div.appendChild(lineBreak);
+
+
+var imageSpan = document.createElement("span");
+imageSpan.innerHTML = "Image 1 ";
+
+div.appendChild(imageSpan);
+
+var imageSpan2 = document.createElement("span");
+imageSpan2.innerHTML = "Image 2 ";
+
+div.appendChild(imageSpan2);
+
+var imageSpan3 = document.createElement("span");
+imageSpan3.innerHTML = "Image 3 ";
+
+div.appendChild(imageSpan3);
+
+var imageSpan4 = document.createElement("span");
+imageSpan4.innerHTML = "Image 4 ";
+
+div.appendChild(imageSpan4);
+
+var imageSpan5 = document.createElement("span");
+imageSpan5.innerHTML = "Image 5";
+
+div.appendChild(imageSpan5);
+
+var lineBreak2 = document.createElement("br");
+
+div.appendChild(lineBreak2);
+
+
+var aboutSpan = document.createElement("span");
+aboutSpan.innerHTML = "About ";
+
+div.appendChild(aboutSpan);
+
+var blogSpan = document.createElement("span");
+blogSpan.innerHTML = "Blog ";
+
+div.appendChild(blogSpan);
+
+var jobsSpan = document.createElement("span");
+jobsSpan.innerHTML = "Jobs ";
+
+div.appendChild(jobsSpan);
+
+var helpSpan = document.createElement("span");
+helpSpan.innerHTML = "Help";
+
+div.appendChild(helpSpan);
+
+var lineBreak3 = document.createElement("br");
+
+div.appendChild(lineBreak3);
+
+
+var englishSpan = document.createElement("span");
+englishSpan.innerHTML = "English ";
+
+div.appendChild(englishSpan);
+
+var yearSpan = document.createElement("span");
+yearSpan.innerHTML = "2021 ";
+
+div.appendChild(yearSpan);
+
+var gramSpan = document.createElement("span");
+gramSpan.innerHTML = "MyGram ";
+
+div.appendChild(gramSpan);
+
+
+var stringy = "   Hello, this is my string   ";
+
+var stringy2 = stringy.substring(1, 5);
+var stringy3 = stringy.trim();
+var stringy4 = stringy2.trim();
+
+
+console.log(stringy);
+console.log(stringy2);
+console.log(stringy3);
+console.log(stringy4);
