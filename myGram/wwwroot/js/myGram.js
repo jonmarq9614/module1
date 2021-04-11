@@ -102,3 +102,19 @@ console.log(stringy);
 console.log(stringy2);
 console.log(stringy3);
 console.log(stringy4);
+
+var myDate = new Date(1996, 7, 11);
+var myDate2 = new Date(2014, 2, 5);
+var myDate3 = myDate < myDate2;
+
+switch (myDate3) {
+    case false:
+        document.write("First date is less than  second date");
+        break;
+    case true:
+        document.write("First date is greater than second date");
+        break;
+    default:
+        document.write("First date and second date are the same date");
+        break;
+}
