@@ -2,8 +2,9 @@
   <MonoDevelop.Ide.ItemProperties.myGram PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="myGram/wwwroot/js/myGram.js">
     <Files>
-      <File FileName="myGram/Views/Home/Index.cshtml" Line="7" Column="5" />
-      <File FileName="myGram/wwwroot/js/myGram.js" Line="56" Column="38" />
+      <File FileName="myGram/Views/Home/Index.cshtml" Line="11" Column="32" />
+      <File FileName="myGram/wwwroot/js/myGram.js" Line="30" Column="40" />
+      <File FileName="myGram/wwwroot/js/myObject.js" Line="7" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

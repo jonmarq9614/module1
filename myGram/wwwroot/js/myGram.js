@@ -21,6 +21,8 @@ var lineBreak = document.createElement("br");
 
 div.appendChild(lineBreak);
 
+var imageObject = new Image("Image 1", "Image 2", "Image 3",
+    "Image 4", "Image 5");
 
 var tr = null;
 var td = null;
@@ -29,31 +31,31 @@ for (var image = 1; image <= 5; image++) {
     tr = document.createElement("tr");
     td = document.createElement("td");
     span = document.createElement("span");
-    span.innerHTML = "Image " + image;
+    span.innerHTML = imageObject.image1 + image;
     td.appendChild(span);
     tr.appendChild(td);
 
     td = document.createElement("td");
     span = document.createElement("span");
-    span.innerHTML = "Image " + image;
+    span.innerHTML = imageObject.image2 + image;
     td.appendChild(span);
     tr.appendChild(td);
 
     td = document.createElement("td");
     span = document.createElement("span");
-    span.innerHTML = "Image " + image;
+    span.innerHTML = imageObject.image3 + image;
     td.appendChild(span);
     tr.appendChild(td);
 
     td = document.createElement("td");
     span = document.createElement("span");
-    span.innerHTML = "Image " + image;
+    span.innerHTML = imageObject.image4 + image;
     td.appendChild(span);
     tr.appendChild(td);
 
     td = document.createElement("td");
     span = document.createElement("span");
-    span.innerHTML = "Image " + image;
+    span.innerHTML = imageObject.image5 + image;
     td.appendChild(span);
     tr.appendChild(td);
 
