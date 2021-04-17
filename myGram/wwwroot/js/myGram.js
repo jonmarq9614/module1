@@ -1,4 +1,6 @@
-﻿var span = document.createElement("span");
+﻿"use strict";
+
+var span = document.createElement("span");
 span.innerHTML = "My Gram ";
 
 var div = document.getElementById("myDiv");
@@ -20,30 +22,51 @@ var lineBreak = document.createElement("br");
 div.appendChild(lineBreak);
 
 
-var imageSpan = document.createElement("span");
-imageSpan.innerHTML = "Image 1 ";
+var tr = null;
+var td = null;
 
-div.appendChild(imageSpan);
+for (var image = 1; image <= 5; image++) {
+    tr = document.createElement("tr");
+    td = document.createElement("td");
+    span = document.createElement("span");
+    span.innerHTML = "Image " + image;
+    td.appendChild(span);
+    tr.appendChild(td);
 
-var imageSpan2 = document.createElement("span");
-imageSpan2.innerHTML = "Image 2 ";
+    td = document.createElement("td");
+    span = document.createElement("span");
+    span.innerHTML = "Image " + image;
+    td.appendChild(span);
+    tr.appendChild(td);
 
-div.appendChild(imageSpan2);
+    td = document.createElement("td");
+    span = document.createElement("span");
+    span.innerHTML = "Image " + image;
+    td.appendChild(span);
+    tr.appendChild(td);
 
-var imageSpan3 = document.createElement("span");
-imageSpan3.innerHTML = "Image 3 ";
+    td = document.createElement("td");
+    span = document.createElement("span");
+    span.innerHTML = "Image " + image;
+    td.appendChild(span);
+    tr.appendChild(td);
 
-div.appendChild(imageSpan3);
+    td = document.createElement("td");
+    span = document.createElement("span");
+    span.innerHTML = "Image " + image;
+    td.appendChild(span);
+    tr.appendChild(td);
 
-var imageSpan4 = document.createElement("span");
-imageSpan4.innerHTML = "Image 4 ";
 
-div.appendChild(imageSpan4);
 
-var imageSpan5 = document.createElement("span");
-imageSpan5.innerHTML = "Image 5";
+    myDiv.appendChild(tr);
 
-div.appendChild(imageSpan5);
+
+}
+
+
+
+
 
 var lineBreak2 = document.createElement("br");
 
@@ -91,30 +114,8 @@ gramSpan.innerHTML = "MyGram ";
 div.appendChild(gramSpan);
 
 
-var stringy = "   Hello, this is my string   ";
-
-var stringy2 = stringy.substring(1, 5);
-var stringy3 = stringy.trim();
-var stringy4 = stringy2.trim();
 
 
-console.log(stringy);
-console.log(stringy2);
-console.log(stringy3);
-console.log(stringy4);
 
-var myDate = new Date(1996, 7, 11);
-var myDate2 = new Date(2014, 2, 5);
-var myDate3 = myDate < myDate2;
 
-switch (myDate3) {
-    case false:
-        document.write("First date is less than  second date");
-        break;
-    case true:
-        document.write("First date is greater than second date");
-        break;
-    default:
-        document.write("First date and second date are the same date");
-        break;
-}
+
