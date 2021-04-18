@@ -1,7 +1,8 @@
-﻿function Image(image1, image2, image3, image4, image5) {
-    this.image1 = image1;
-    this.image2 = image2;
-    this.image3 = image3;
-    this.image4 = image4;
-    this.image5 = image5;
+﻿function Images(imageOne, imageTwo, imageThree, imageFour, imageFive) {
+    this.image1 = imageOne;
+    this.image2 = imageTwo;
+    this.image3 = imageThree;
+    this.image4 = imageFour;
+    this.image5= imageFive;
 }
+
