@@ -5,4 +5,3 @@
     this.image4 = imageFour;
     this.image5= imageFive;
 }
-
