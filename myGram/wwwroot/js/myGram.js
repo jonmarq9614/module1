@@ -18,68 +18,43 @@ signupButton.innerHTML = "Sign Up";
 div.appendChild(signupButton)
 
 
-
-
 var lineBreak = document.createElement("br");
 
 div.appendChild(lineBreak);
 
-var imageObject1 = new Images("Image 1", "Image 2", "Image 3", "Image 4", "Image 5");
-var imageObject2 = new Images("Image 6", "Image 7", "Image 8", "Image 9", "Image 10");
-var imageObject3 = new Images("Image 11", "Image 12", "Image 13", "Image 14", "Image 15");
-var imageObject4 = new Images("Image 16", "Image 17", "Image 18", "Image 19", "Image 20");
-var imageObject5 = new Images("Image 21", "Image 22", "Image 23", "Image 24", "Image 25");
-
-
-var imageArray = [];
-imageArray.push(imageObject1);
-imageArray.push(imageObject2);
-imageArray.push(imageObject3);
-imageArray.push(imageObject4);
-imageArray.push(imageObject5);
-
-
-var tr = null;
+var table = document.createElement("table");
+var tBody = document.createElement("tbody");
+var tr = document.createElement("tr");
 var td = null;
+var imageSpan = null;
+var counter = 0;
 
-var imageObject;
+var image1 = new Image();
+image1.imageName = "Image ";
+image1.imageId = 1;
+image1.imageClass = "My Image";
 
-for (var image = 0; image <= imageArray.length; image++) {
-    imageObject = imageArray[image];
-    tr = document.createElement("tr");
+
+for (var image = 1; image <= 25; image++) {
+    if (counter == 5) {
+        tBody.appendChild(tr);
+        tr = document.createElement("tr");
+        counter = 0;
+    }
+    
     td = document.createElement("td");
-    span = document.createElement("span");
-    span.innerHTML = imageObject.image1;
-    td.appendChild(span);
+    var imageSpan = document.createElement("span");
+    imageSpan.innerHTML = image1.imageName + image;
+    imageSpan.className = "MyImageClass";
+    td.appendChild(imageSpan);
     tr.appendChild(td);
-
-    td = document.createElement("td");
-    span = document.createElement("span");
-    span.innerHTML = imageObject.image2;
-    td.appendChild(span);
-    tr.appendChild(td);
-
-    td = document.createElement("td");
-    span = document.createElement("span");
-    span.innerHTML = imageObject.image3;
-    td.appendChild(span);
-    tr.appendChild(td);
-
-    td = document.createElement("td");
-    span = document.createElement("span");
-    span.innerHTML = imageObject.image4;
-    td.appendChild(span);
-    tr.appendChild(td);
-
-    td = document.createElement("td");
-    span = document.createElement("span");
-    span.innerHTML = imageObject.image5;
-    td.appendChild(span);
-    tr.appendChild(td);
-
-    myDiv.appendChild(tr);
+    counter++;
 
 }
+
+tBody.appendChild(tr);
+table.appendChild(tBody);
+div.appendChild(table);
 
 
 
@@ -128,9 +103,12 @@ gramSpan.innerHTML = "MyGram ";
 
 div.appendChild(gramSpan);
 
-
-
-
+var myImageArray = document.getElementsByClassName("MyImageClass");
+for (var element in myImageArray) {
+    myImageArray[element].onclick = function () {
+        alert("You clicked on an image");
+    }
+}
 
 
 
