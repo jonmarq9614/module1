@@ -1,5 +1,11 @@
 ﻿"use strict";
 
+var mySelect = document.getElementById("ThemeChanged");
+mySelect.onchange = function () {
+    alert("You have changed the theme");
+}
+
+
 var span = document.createElement("span");
 span.innerHTML = "My Gram ";
 
@@ -109,6 +115,4 @@ for (var element in myImageArray) {
         alert("You clicked on an image");
     }
 }
-
-
 
