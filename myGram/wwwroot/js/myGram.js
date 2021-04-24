@@ -47,7 +47,7 @@ for (var image = 1; image <= 25; image++) {
         tr = document.createElement("tr");
         counter = 0;
     }
-    
+
     td = document.createElement("td");
     var imageSpan = document.createElement("span");
     imageSpan.innerHTML = image1.imageName + image;
@@ -110,7 +110,7 @@ gramSpan.innerHTML = "MyGram ";
 div.appendChild(gramSpan);
 
 var myImageArray = document.getElementsByClassName("MyImageClass");
-for (var element in myImageArray) {
+for (var x = 0; x < myImageArray.length; x++) {
     myImageArray[element].onclick = function () {
         alert("You clicked on an image");
     }
