@@ -33,6 +33,17 @@ namespace myGram.Controllers
             return View();
         }
 
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        public IActionResult LogUser(string User, string Password)
+        {
+            string result = $"User is {User} and password is {Password}";
+            return Content(result);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

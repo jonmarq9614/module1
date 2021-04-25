@@ -5,24 +5,7 @@ mySelect.onchange = function () {
     alert("You have changed the theme");
 }
 
-
-var span = document.createElement("span");
-span.innerHTML = "My Gram ";
-
 var div = document.getElementById("myDiv");
-
-div.appendChild(span);
-
-var loginButton = document.createElement("button");
-loginButton.innerHTML = "Log In";
-
-div.appendChild(loginButton);
-
-var signupButton = document.createElement("button");
-signupButton.innerHTML = "Sign Up";
-
-div.appendChild(signupButton)
-
 
 var lineBreak = document.createElement("br");
 
