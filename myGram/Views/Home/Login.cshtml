@@ -1,5 +1,5 @@
 ﻿<div id="LogInDiv">
-    <form action="~/Home/LogUser" method="post">
+    <form id="MyForm">
         <table>
             <tbody>
                 <tr>
@@ -7,7 +7,7 @@
                         <label>User</label>
                     </td>
                     <td>
-                        <input type="text" name="User" placeholder="Type user name" />
+                        <input type="text" name="User" id="Username" placeholder="Type user name" />
                     </td>
                 </tr>
                 <tr>
@@ -15,12 +15,12 @@
                         <label>Password</label>
                     </td>
                     <td>
-                        <input type="password" name="Password" placeholder="Type user password" />
+                        <input type="password" name="Password" id="Password" placeholder="Type user password" />
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <button>Log In</button>
+                        <button id="LogInButton">Log In</button>
                     </td>
                 </tr>
             </tbody>
