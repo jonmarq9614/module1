@@ -43,6 +43,18 @@ namespace myGram.Controllers
             string result = $"User is {User} and password is {Password}";
             return Content(result);
         }
+         
+        public bool ImagesJson([FromBody]Image image)
+        {
+            bool imageWasClicked = false;
+
+            if(image!= null)
+            {
+                imageWasClicked = true;
+            }
+
+            return imageWasClicked;
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
