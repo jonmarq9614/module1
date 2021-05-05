@@ -122,16 +122,3 @@ div.appendChild(gramSpan);
     //}
 //}
 
-var myForm = document.getElementById("MyForm");
-myForm.onsubmit = function (event) {
-    event.preventDefault();
-}
-
-var loginButton = document.getElementById("LogInButton");
-loginButton.onclick = function () {
-    var userInput = document.getElementById("Username");
-    var passwordInput = document.getElementById("Password");
-    alert(userInput.value);
-    alert(passwordInput.value);
-}
-

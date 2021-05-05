@@ -33,15 +33,20 @@ namespace myGram.Controllers
             return View();
         }
 
+        public IActionResult Registering([FromBody]RegisteringClass registering)
+        {
+            return Content(registering.ToString());
+        }
+
         public IActionResult Login()
         {
             return View();
         }
 
-        public IActionResult LogUser(string User, string Password)
+        public IActionResult LogUser([FromBody]User user)
         {
-            string result = $"User is {User} and password is {Password}";
-            return Content(result);
+            
+            return Content(user.ToString());
         }
          
         public bool ImagesJson([FromBody]Image image)

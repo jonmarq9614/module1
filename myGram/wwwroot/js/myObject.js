@@ -3,3 +3,4 @@
     this.imageId = 0;
     this.imagePath = "";
 }
+
